@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		debugger;
+			sum = 0;
+			numbers = [];
+			sumArray = [];
+			n=0;		
+			while(n<1000){
+				for (var i = 0; i < 100; i++) {
+					numbers[i] = Math.floor(Math.random()*10+1);
+					sum = sum+numbers[i];
+					temp = sum;
+					if (i==99) {
+						sumArray.push(sum);
+						sum = 0;
+						}
+					}
+					n++;
+					}
+			alert(temp);
+			sumArray.sort();
+			document.write(sumArray);
+		</script>
+	</body>
+</html>
