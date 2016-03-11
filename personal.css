@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    margin:0px;
 }
 .container{
         width: 100%;
@@ -37,7 +38,7 @@ body{
     }
    .leftText,.rightText{
     margin-top: 300px;
-    line-height: 20px;
+    line-height: 1;
     font-family: arial;
     font-size: 45pt;
     font-weight: bold;
