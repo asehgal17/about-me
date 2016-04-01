@@ -1,66 +1,87 @@
-body{
-    background-color: black;
-    margin:0px;
-}
-.container{
-        width: 100%;
-        overflow: auto;
-        padding: 0px;
-        margin-top: -10px;
-        margin-left: -10px;
-        margin-bottom: -10px;
-        margin-right: 10px;
-    }
-    .left{
-        line-height: 20px;
-        font-family: monospace;
-        font-size: 30pt;
-        text-align: center;
-        float: left;
-        width: 50%;
-        height: 1000px;
-        background-color: white;
-        color: black;
+html,body{
+				height: 100%;
+				padding:0;
+				margin: 0;
 
-    
-    }
-    .right{
-  
-        text-align: center;
-        float: right;
-        width: 50%;
-        height: 1000px;
-        background-color: black;
-        color: white;
-        
+			}
+			html{
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+}
+html *{
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+}
+			.big{
+				height: 100vh;
+				 background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #1AF6E4, #0084FF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #1AF6E4, #0084FF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #1AF6E4, #0084FF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #1AF6E4, #0084FF); /* Standard syntax */
+				  margin-bottom: 50px;
+				  display: -webkit-box;
+				  display: -webkit-flex;
+				  display: -ms-flexbox;
+				  display: flex;
+				  -webkit-box-orient: vertical;
+				  -webkit-box-direction: normal;
+				  -webkit-flex-direction: column;
+				      -ms-flex-direction: column;
+				          flex-direction: column;
+				  -webkit-box-pack: center;
+				  -webkit-justify-content: center;
+				      -ms-flex-pack: center;
+				          justify-content: center;
+				  -webkit-box-align: center;
+				  -webkit-align-items: center;
+				      -ms-flex-align: center;
+				          align-items: center;
+				  text-align: center;
 
-    
-    }
-   .leftText,.rightText{
-    margin-top: 300px;
-    line-height: 1;
-    font-family: arial;
-    font-size: 45pt;
-    font-weight: bold;
-   }
-    .typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
+			}
+			.heading{
+				height: 30vh;
+				width: 40vw;
+				position: relative;
+				 display: flex;
+			  	flex-direction: column;
+			  	justify-content: center;
+			  	align-items: center;
+			  	text-align: center;
+				font-size: 3em;
+				font-family: 'Roboto', sans-serif;
+				color: white;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			
+				background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #0084FF, #1AF6E4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #0084FF, #1AF6E4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #0084FF, #1AF6E4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #0084FF, #1AF6E4); /* Standard syntax */
+
+			
+			}
+			.heading:before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 5px;
+				bottom: 0;
+				left: 0;
+				background-color: #FFFFFF;
+				visibility: hidden;
+				-webkit-transform: scaleX(0);
+				transform: scaleX(0);
+				-webkit-transition: all 0.5s ease-in-out 0s;
+				transition: all 0.5s ease-in-out 0s;
+			}
+			.heading:hover:before{
+				visibility: visible;
+				-webkit-transform:scaleX(1);
+				transform: scaleX(1);
+			}
+			p{
+				width: 600px;
+				margin: 0 auto 20px
+			}
